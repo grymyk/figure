@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Figure</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/curve.js"></script>
+    <script src="js/shape/shape.js"></script>
+    <script src="js/shape/face.js"></script>
+    <script src="js/shape/shoulder.js"></script>
+    <script src="js/shape/breast.js"></script>
+    <script src="js/shape/waist.js"></script>
+    <script src="js/shape/thigh.js"></script>
+    <script src="js/shape/legs.js"></script>
+    <script src="js/shape/size.js"></script>
+    <script src="js/tailor.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- <h2 class="heading">step I</h2> -->
+        <h1 class="heading">Build Your Figure</h1>
+        <div id="silhouette_holder">
+            <!-- <img id="preview" src="" />-->
+            <canvas id="silhouette" width="400" height="500"></canvas>
+            <!-- <div id="preview"></div> -->
+        </div>
+        <div id="parameters">
+            <!-- <div class="clothers_sizes">
+                <h3 class="heading">Sizes of Clothes</h3>
+                <ul data-selector="Sizes" id="sizes">
+                    <li>
+                        <a data-preview="small" href="">S</a>
+                    </li>
+                    <li>
+                        <a data-preview="middle" href="">M</a>
+                    </li>
+                    <li>
+                        <a data-preview="large" href="">L</a>
+                    </li>
+                </ul>
+            </div> -->
+            
+            
+            <div class="selector_holder face_shape">
+                <h3 class="heading">Face</h3>
+                <ul data-selector="Face" id="faces">
+                    <li>
+                         <a data-preview="rectangle" href="">rectangle</a> 
+                    </li>
+                    <li>
+                        <a data-preview="heart" href="">heart</a>
+                    </li>
+                    <li>
+                       <a data-preview="oval" href="">oval</a>
+                    </li>
+                    <li>
+                        <a data-preview="round" href="">round</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="selector_holder neck_shape">
+                <h3 class="heading">Shoulders</h3>
+                <ul data-selector="Shoulder" id="neckes">
+                    <li>
+                        <a data-preview="tight" href="">tight</a>
+                    </li>
+                    <li>
+                        <a data-preview="normal" href="">normal</a>
+                    </li>
+                    <li>
+                        <a data-preview="wide" href="">wide</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="selector_holder neck_shape">
+                <h3 class="heading">Breast</h3>
+                <ul data-selector="Breast" id="breast">
+                    <li>
+                        <a data-preview="small" href="">small</a>
+                    </li>
+                    <li>
+                        <a data-preview="middle" href="">middle</a>
+                    </li>
+                    <li>
+                        <a data-preview="large" href="">large</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="selector_holder">
+                <h3 class="heading">Waist</h3>
+                <ul data-selector="Waist" id="waist">
+                    <li>
+                        <a data-preview="small" href="">small</a>
+                    </li>
+                    <li>
+                        <a data-preview="middle" href="">middle</a>
+                    </li>
+                    <li>
+                        <a data-preview="large" href="">large</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="selector_holder">
+                <h3 class="heading">Thigh</h3>
+                <ul data-selector="Thigh" id="thighs">
+                    <li>
+                        <a data-preview="small" href="">small</a>
+                    </li>
+                    <li>
+                        <a data-preview="middle" href="">middle</a>
+                    </li>
+                    <li>
+                        <a data-preview="large" href="">large</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="selector_holder">
+                <h3 class="heading">Legs</h3>
+                <ul data-selector="Legs" id="legs">
+                    <li>
+                        <a data-preview="small" href="">O-type</a>
+                    </li>
+                    <li>
+                        <a data-preview="middle" href="">normal</a>
+                    </li>
+                    <li>
+                        <a data-preview="large" href="">X-type</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="erase_btn">
+                <button id="erase_silhouette">erase all shapes</button>
+            </div>
+        </div>
+        <div class="clear"></div>
+        
+        <div class="pagenator" style="display: none;">
+            <button id="prev_step">Prev</button>
+            <button id="next_step">Next</button>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="mailto:grymyk@gmail.com">grymyk@gmail.com</a>
+        <span>&#169; 2017 Grymyk</span>
+    </div>
+    <script>
+        $(document).ready(function() {
+            var model = new TailorModel();
+            var view = new TailorView(model);
+            var tailor = new TailorController(model, view);
+            
+			tailor.init();
+        });
+    </script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-55823478-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

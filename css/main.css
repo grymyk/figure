@@ -1,0 +1,90 @@
+.container {
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-top: none;
+}
+#silhouette_holder {
+    margin: 20px 20px 0;
+    width: 400px;
+    height: 500px;
+    border: 1px solid #000;
+    float: left;
+}
+#parameters {
+    margin: 20px 20px 0;
+    width: 516px;
+    height: 500px;
+    border: 1px solid #000;
+    float: left;
+}
+.clear {
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+.heading {
+    text-align: center;
+    font-size: 48px;
+    padding: 20px 0 0;
+    text-transform: uppercase;
+}
+#parameters .heading {
+    text-align: center;
+    font-size: 24px;
+    padding: 15px 0 5px;
+}
+.clothers_sizes {
+    overflow: hidden;
+}
+.clothers_sizes ul li a {
+    display: block;
+    float: left;
+    background: #cfc;
+    padding: 0 20px;
+    margin: 0 10px;
+    border-radius: 5px; 
+    height: 25px;
+    line-height: 25px;
+    }
+.clothers_sizes ul li a:hover {
+    background: #ABCFAB;
+    }
+.selector_holder {
+    overflow: hidden;
+}
+.selector_holder ul li a {
+    display: block;
+    float: left;
+    background: #cff;
+    padding: 0 10px;
+    margin: 0 5px;
+    border-radius: 5px; 
+    height: 25px;
+    line-height: 25px;
+}
+.selector_holder ul li a:hover{
+    background: #86A8A8;
+}
+
+.selector_holder ul li a.active {
+    background: #FFCCCC;
+}
+.erase_btn {
+    padding: 50px 5px 0;
+}
+
+.erase_btn  button {
+    cursor: pointer;
+}
+
+.pagenator {
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+.footer {
+    margin: 20px;
+    text-align: right;  
+}
