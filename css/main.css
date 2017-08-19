@@ -76,6 +76,7 @@
 
 .erase_btn  button {
     cursor: pointer;
+    text-align: right;
 }
 
 .pagenator {
