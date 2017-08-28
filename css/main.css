@@ -1,40 +1,65 @@
+html, body {
+    height: 100%;
+    font-size: 18px;
+    font-family: "Noto", sans-serif;
+    color: #212121;
+}
+
 .container {
-    width: 1000px;
-    height: 700px;
+    width: 830px;
     margin: 0 auto;
     border-top: none;
 }
+
 #silhouette_holder {
     margin: 20px 20px 0;
-    width: 400px;
-    height: 500px;
+    width: 220px;
+    height: 450px;
     float: left;
 }
+
 #parameters {
     margin: 20px 20px 0;
-    width: 516px;
+    width: 460px;
     height: 500px;
     float: left;
 }
+
 .clear {
     clear: both;
     font-size: 0;
     line-height: 0;
 }
-.heading {
+
+h1, h2 {
     text-align: center;
-    font-size: 48px;
-    padding: 20px 0 0;
     text-transform: uppercase;
 }
-#parameters .heading {
-    text-align: center;
-    font-size: 24px;
-    padding: 15px 0 5px;
+
+h1 {
+    font-size: 56px;
+    padding: 40px 0 0;
 }
+
+.heading {
+    font-size: 45px;
+    padding: 20px 0 0;
+}
+
+#parameters .heading {
+    font-size: 24px;
+    padding: 0;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    width: 115px;
+    margin: 12px 6px 12px 0;
+}
+
 .clothers_sizes {
     overflow: hidden;
 }
+
 .clothers_sizes ul li a {
     display: block;
     float: left;
@@ -48,33 +73,53 @@
 .clothers_sizes ul li a:hover {
     background: #ABCFAB;
     }
+
 .selector_holder {
     overflow: hidden;
 }
+
 .selector_holder ul li a {
     display: block;
     float: left;
-    background: #cff;
-    padding: 0 10px;
-    margin: 0 5px;
-    border-radius: 5px; 
-    height: 25px;
-    line-height: 25px;
+    background: #9E9E9E;
+    color: #fff;
+    padding: 0 12px;
+    margin: 12px 12px 12px 0;
+    height: 36px;
+    line-height: 36px;
+    text-decoration: none;
 }
+
 .selector_holder ul li a:hover{
-    background: #86A8A8;
+    background: rgba(158, 158, 158, 0.7);
 }
 
 .selector_holder ul li a.active {
-    background: #FFCCCC;
+    background: #616161;
 }
+
+.selector_holder ul li a.active:hover {
+    background: rgba(97,97, 97, 0.7);
+}
+
 .erase_btn {
-    padding: 50px 5px 0;
+    padding: 50px 12px 0;
     text-align: right;
 }
 
-.erase_btn  button {
+.erase_btn button {
     cursor: pointer;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 12px;
+    background: #F44336;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+}
+
+.erase_btn button:hover {
+    background: rgba(244, 67, 54, 0.7);
 }
 
 .pagenator {
@@ -86,3 +131,70 @@
     margin: 20px;
     text-align: right;  
 }
+
+@media (max-width: 902px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 580px;
+    }
+
+    #parameters {
+        width: 280px;
+    }
+
+    #parameters .selector_holder {
+        margin: 0 0 6px;
+    }
+
+    #parameters .heading {
+        float: none;
+        margin: 0;
+        font-size: 18px;
+        height: 24px;
+        line-height: 24px;
+    }
+
+    .selector_holder ul li a {
+        margin: 6px 12px 6px 0;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 6px;
+    }
+
+    .erase_btn button {
+        height: 24px;
+        line-height: 24px;
+        padding: 0 6px;
+    }
+}
+
+
+@media (max-width: 620px) {
+    h1 {
+        font-size: 36px;
+        padding: 6px 0 0;
+    }
+
+    .heading {
+        font-size: 24px;
+        padding: 12px 0 0;
+    }
+
+    .container {
+        width: auto;
+    }
+
+    #silhouette_holder,
+    #parameters {
+        float: none;
+    }
+
+    #silhouette_holder {
+        margin: 0 auto;
+        width: 180px;
+    }
+}
+

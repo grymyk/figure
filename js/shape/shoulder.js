@@ -2,7 +2,7 @@ Shape.Shoulder = function(curve) {
     this.isDrawn = false;
     
     this.origin = {
-        x : 180,
+        x : 90,
         y : 77
     };
     
