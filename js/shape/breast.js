@@ -28,7 +28,7 @@ Shape.Breast = function(context) {
             DELTA_Y_CP_TOP: 1.6
         }
     };
-}
+};
 
 Shape.Breast.prototype = {
     setOptions : function(shape) {

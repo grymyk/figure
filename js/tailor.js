@@ -57,6 +57,7 @@ TailorView.prototype = {
     
     drawShape : function(selector, type) {
         var shape = Shape.factory(selector, type);
+
         shape.eraseShape(this.curve);
         shape.drawShape(this.curve);
     },

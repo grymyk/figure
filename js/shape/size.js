@@ -17,7 +17,7 @@ Shape.Size = function(curve) {
             height : 1.2
         }
     };
-}
+};
 
 Shape.Size.prototype = {
     setShapeFactor : function(shape) {
