@@ -37,12 +37,12 @@ function TailorView(model) {
 }
 
 TailorView.prototype = {
-    addActiveClass : function(target) { 
+    addActiveClass: function(target) { 
         target.parents('ul').find('a').removeClass('active');
         target.addClass('active');
     },
     
-    addActiveClasses : function(silhouette) {
+    addActiveClasses: function(silhouette) {
         for (var part in silhouette) {
             var target = this.getTarget(part, silhouette[part]);
             
@@ -50,29 +50,30 @@ TailorView.prototype = {
         }
     },
     
-    getTarget : function(selector, type) {
+    getTarget: function(selector, type) {
         var ul = this.selector_holder.find('ul[data-selector=' + selector +  ']');
+
         return ul.find('a[data-preview='+ type +']');
     },
     
-    drawShape : function(selector, type) {
+    drawShape: function(selector, type) {
         var shape = Shape.factory(selector, type);
 
         shape.eraseShape(this.curve);
         shape.drawShape(this.curve);
     },
     
-    drawSilhouette : function(silhouette) {
+    drawSilhouette: function(silhouette) {
         for (var part in silhouette) {
             this.drawShape(part, silhouette[part]);
         }
     },
     
-    eraseShape : function() {
+    eraseShape: function() {
         this.shape.eraseShape(this.curve);
     },
     
-    eraseAll : function() {
+    eraseAll: function() {
         this.curve.eraseAll();
         
         Shape.prototype.clearSilhouette();
@@ -101,7 +102,7 @@ function TailorController(model, view) {
 }
 
 TailorController.prototype = {
-    init : function() {
+    init: function() {
         var silhouette = this.model.getDataFromConfig();
         
         //var target = data.target;
@@ -115,7 +116,7 @@ TailorController.prototype = {
         this.view.addActiveClasses(silhouette);
     },
     
-    paramsHandler : function(event) {
+    paramsHandler: function(event) {
         event.preventDefault();
         
         var target = $(event.target);        
@@ -127,7 +128,7 @@ TailorController.prototype = {
         this.view.addActiveClass(target);
     },
     
-    eraseSilhouette : function() {
+    eraseSilhouette: function() {
         this.view.eraseAll();
     } 
 };

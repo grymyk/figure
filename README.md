@@ -1,5 +1,9 @@
 # Figure -- Build Your Silhouette
 
+## toDo
+* webpack
+* python -- back-end
+
 ## Webdesign
 * https://material.io
 * buttons: https://material.io/guidelines/components/buttons.html#buttons-toggle-buttons
