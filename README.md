@@ -1,8 +1,10 @@
 # Figure -- Build Your Silhouette
 
+URL: figura.herokuapp.com
+
 ## toDo
 * webpack
-* python -- back-end
+* python
 
 ## Webdesign
 * https://material.io
