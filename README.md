@@ -1,10 +1,11 @@
 # Figure -- Build Your Silhouette
 
-URL: figura.herokuapp.com
+URL: https://fgure.herokuapp.com/
 
 ## toDo
-* webpack
-* python
+* 'clean all' button
+* extract curve.js to separate app
+* add statistis of silouette/shape
 
 ## Webdesign
 * https://material.io
@@ -20,6 +21,6 @@ params buttons colors:
 bg: #9E9E9E
 fore: #616161
 
-'red' button:
+'clean all' button:
 bg: #F44336
 
