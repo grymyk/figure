@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/curve.js"></script>
+    <script src="js/shape/shape.js"></script>
+    <script src="js/shape/face.js"></script>
+    <script src="js/shape/shoulder.js"></script>
+    <script src="js/shape/breast.js"></script>
+    <script src="js/shape/waist.js"></script>
+    <script src="js/shape/thigh.js"></script>
+    <script src="js/shape/legs.js"></script>
+    <script src="js/shape/size.js"></script>
+    <script src="js/tailor.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>figure</h1>
+        <!-- <h2 class="heading">step I</h2> -->
+        <h2 class="heading">Build Your Figure</h2>
+        <div id="silhouette_holder">
+            <!-- <img id="preview" src="" />-->
+            <canvas id="silhouette" width="180" height="450"></canvas>
+            <!-- <div id="preview"></div> -->
+        </div>
+        <div id="parameters">
+            <!-- <div class="clothers_sizes">
+                <h3 class="heading">Sizes of Clothes</h3>
+                <ul data-selector="Sizes" id="sizes">
+                    <li>
+                        <a data-preview="small" href="">S</a>
+                    </li>
+                    <li>
+                        <a data-preview="middle" href="">M</a>
+                    </li>
+                    <li>
+                        <a data-preview="large" href="">L</a>
+                    </li>
+                </ul>
+            </div> -->
+            
+            
+            <div class="selector_holder face_shape">
+                <h3 class="heading">face</h3>
+                <ul data-selector="Face" id="faces">
+                    <li>
+                         <a data-preview="rectangle" href="">rectangle</a> 
+                    </li>
+                    <li>
+                        <a data-preview="heart" href="">heart</a>
+                    </li>
+                    <li>
+                       <a data-preview="oval" href="">oval</a>
+                    </li>
+                    <li>
+                        <a data-preview="round" href="">round</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="selector_holder neck_shape">
+                <h3 class="heading">shoulders</h3>
+                <ul data-selector="Shoulder" id="neckes">
+                    <li>
+                        <a data-preview="tight" href="">tight</a>
+                    </li>
+                    <li>
+                        <a data-preview="normal" href="">normal</a>
+                    </li>
+                    <li>
+                        <a data-preview="wide" href="">wide</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="selector_holder neck_shape">
+                <h3 class="heading">breast</h3>
+                <ul data-selector="Breast" id="breast">
+                    <li>
+                        <a data-preview="small" href="">small</a>
+                    </li>
+                    <li>
+                        <a data-preview="middle" href="">middle</a>
+                    </li>
+                    <li>
+                        <a data-preview="large" href="">large</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="selector_holder">
+                <h3 class="heading">waist</h3>
+                <ul data-selector="Waist" id="waist">
+                    <li>
+                        <a data-preview="small" href="">small</a>
+                    </li>
+                    <li>
+                        <a data-preview="middle" href="">middle</a>
+                    </li>
+                    <li>
+                        <a data-preview="large" href="">large</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="selector_holder">
+                <h3 class="heading">thigh</h3>
+                <ul data-selector="Thigh" id="thighs">
+                    <li>
+                        <a data-preview="small" href="">small</a>
+                    </li>
+                    <li>
+                        <a data-preview="middle" href="">middle</a>
+                    </li>
+                    <li>
+                        <a data-preview="large" href="">large</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="selector_holder">
+                <h3 class="heading">legs</h3>
+                <ul data-selector="Legs" id="legs">
+                    <li>
+                        <a data-preview="small" href="">O-type</a>
+                    </li>
+                    <li>
+                        <a data-preview="middle" href="">normal</a>
+                    </li>
+                    <li>
+                        <a data-preview="large" href="">X-type</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="erase_btn">
+                <button id="erase_silhouette">clean all shapes</button>
+            </div>
+        </div>
+        <div class="clear"></div>
+        
+        <div class="pagenator" style="display: none;">
+            <button id="prev_step">Prev</button>
+            <button id="next_step">Next</button>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="mailto:grymyk@gmail.com">grymyk@gmail.com</a>
+        <span>&#169; 2019</span>
+    </div>
+    <script>
+        $(document).ready(function() {
+            var model = new TailorModel();
+            var view = new TailorView(model);
+            var tailor = new TailorController(model, view);
+            
+			tailor.init();
+        });
+    </script>
+</body>
+</html>
+
