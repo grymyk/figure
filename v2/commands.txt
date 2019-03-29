@@ -1,0 +1,37 @@
+#sourse
+# https://medium.freecodecamp.org/how-to-use-reactjs-with-webpack-4-babel-7-and-material-design-ff754586f618
+
+mkdir webpack-app
+cd webpack-app
+
+#create the package.json file with some extra config settings
+npm init
+
+#add an index.html and index.js files to our new project folder, inside an src folder.
+mkdir src
+touch src/index.html
+touch src/index.js
+
+#Adding Webpack to the project
+npm install --save-dev webpack webpack-cli webpack-dev-server
+
+#
+touch webpack.config.js
+
+#we are going to work with some paths inside the Webpack config file. Let’s install path in our project as a devDependency.
+npm install --save-dev path
+
+#This plugin will inject the index.js inside the HTML file without any manual operation.
+npm install --save-dev html-webpack-plugin
+
+#add a bunch of Babel packages to our app as devDependencies.
+npm install --save-dev @babel/core @babel/node @babel/preset-env @babel/preset-react babel-loader
+
+#add a loader that will let us import and use CSS files and SCSS files.
+npm install --save-dev style-loader css-loader sass-loader node-sass
+
+#
+touch .babelrc
+
+#
+npm install --save-dev file-loader @babel/plugin-proposal-class-properties
