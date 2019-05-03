@@ -97,7 +97,7 @@ h1 {
 .selector_holder ul li button {
   display: block;
   float: left;
-  background: #FF6F61;
+  background: #616161;
   color: #fff;
   padding: 0;
   margin: 14px 0 14px 14px;
@@ -111,16 +111,16 @@ h1 {
 }
 
 .selector_holder ul li button:hover{
-  background: rgba(255, 111, 97, 0.7);
+  background: rgba(97, 97, 97, 0.7);
   cursor: pointer;
 }
 
 .selector_holder ul li button.active {
-  background: #616161;
+  background: #FF6F61;
 }
 
 .selector_holder ul li button.active:hover {
-  background: rgba(97,97, 97, 0.7);
+  background: rgba(255, 111, 97, 0.7);
 }
 
 .erase_btn {
