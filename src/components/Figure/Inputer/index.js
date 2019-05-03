@@ -76,7 +76,7 @@ class Inputer extends React.Component {
         });
 
         return (
-            <div>
+            <div id='parameters_holder'>
                 <div id="parameters">
                     {listShapeButton}
                 </div>

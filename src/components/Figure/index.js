@@ -2,7 +2,6 @@ import React from 'react';
 
 import './index.scss';
 
-import CopyRight from '../CopyRight'
 import Viewer from './Viewer'
 import Inputer from './Inputer'
 
@@ -41,14 +40,13 @@ class Figure extends React.Component {
 
                     <h2 className="heading">Build Your Figure</h2>
 
-                    <Viewer siluet = {this.state} />
                     <Inputer
                         siluet = {this.state}
                         onFigureChange = {this.onFigureChange}
                         //onFigureClean = {this.onFigureClean}
                     />
+                    <Viewer siluet = {this.state} />
                 </div>
-				<CopyRight />
 			</div>
 		)
 	}

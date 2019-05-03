@@ -3,6 +3,8 @@ html, body {
   font-size: 18px;
   font-family: "Noto", sans-serif;
   color: #212121;
+  padding: 0;
+  margin: 0;
 }
 
 ol, ul {
@@ -18,15 +20,19 @@ ol, ul {
 }
 
 #silhouette_holder {
-  margin: 20px 20px 0;
+  margin: 10px 0 0 20px;
   width: 220px;
   height: 450px;
   float: left;
 }
 
+#parameters_holder {
+    float: left;
+}
+
 #parameters {
-  margin: 20px 20px 0;
-  width: 460px;
+  margin: 20px 20px 0 0;
+  width: 510px;
   height: 500px;
   float: left;
 }
@@ -41,6 +47,7 @@ h1, h2 {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -54,13 +61,15 @@ h1 {
 }
 
 #parameters .heading {
-  font-size: 24px;
+  font-size: 21px;
   padding: 0;
   float: left;
-  height: 36px;
-  line-height: 36px;
+  height: 42px;
+  line-height: 42px;
   width: 115px;
-  margin: 12px 6px 12px 0;
+  margin: 14px 0;
+  text-transform: uppercase;
+  text-align: right;
 }
 
 .clothers_sizes {
@@ -88,18 +97,21 @@ h1 {
 .selector_holder ul li button {
   display: block;
   float: left;
-  background: #9E9E9E;
+  background: #FF6F61;
   color: #fff;
-  padding: 0 12px;
-  margin: 12px 12px 12px 0;
-  height: 36px;
-  line-height: 36px;
+  padding: 0;
+  margin: 14px 0 14px 14px;
+  height: 45px;
+  line-height: 42px;
   text-decoration: none;
+  border: none;
+  outline: none;
   font-size: 14px;
+  width: 84px;
 }
 
 .selector_holder ul li button:hover{
-  background: rgba(158, 158, 158, 0.7);
+  background: rgba(255, 111, 97, 0.7);
   cursor: pointer;
 }
 
@@ -151,20 +163,22 @@ h1 {
     width: 580px;
   }
 
+
+
   #parameters {
     width: 280px;
-  }
 
-  #parameters .selector_holder {
-    margin: 0 0 6px;
-  }
+    .selector_holder {
+      margin: 0 0 6px;
+    }
 
-  #parameters .heading {
-    float: none;
-    margin: 0;
-    font-size: 18px;
-    height: 24px;
-    line-height: 24px;
+    .heading {
+      float: none;
+      margin: 0;
+      font-size: 18px;
+      height: 24px;
+      line-height: 24px;
+    }
   }
 
   .selector_holder ul li button {
@@ -188,7 +202,7 @@ h1 {
   }
 
   .heading {
-    font-size: 24px;
+    font-size: 21px;
     padding: 12px 0 0;
   }
 
