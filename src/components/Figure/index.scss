@@ -20,7 +20,7 @@ ol, ul {
 }
 
 #silhouette_holder {
-  margin: 10px 0 0 20px;
+  margin: 10px 0 0;
   width: 220px;
   height: 450px;
   float: left;
@@ -51,7 +51,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 36px;
   padding: 40px 0 0;
 }
 
@@ -66,8 +66,8 @@ h1 {
   float: left;
   height: 42px;
   line-height: 42px;
-  width: 115px;
-  margin: 14px 0;
+  width: 120px;
+  margin: 16px 0;
   text-transform: uppercase;
   text-align: right;
 }
@@ -100,9 +100,9 @@ h1 {
   background: #616161;
   color: #fff;
   padding: 0;
-  margin: 14px 0 14px 14px;
+  margin: 16px 6px;
   height: 45px;
-  line-height: 42px;
+  line-height: 45px;
   text-decoration: none;
   border: none;
   outline: none;
@@ -155,37 +155,32 @@ h1 {
 }
 
 @media (max-width: 902px) {
-  body {
-    font-size: 16px;
-  }
-
   .container {
     width: 580px;
   }
 
-
-
   #parameters {
-    width: 280px;
+    width: 288px;
 
     .selector_holder {
-      margin: 0 0 6px;
+      margin: 0 0 7px;
     }
 
     .heading {
       float: none;
       margin: 0;
-      font-size: 18px;
+      text-align: center;
+      width: auto;
       height: 24px;
       line-height: 24px;
+      font-size: 18px;
     }
   }
 
   .selector_holder ul li button {
-    margin: 6px 12px 6px 0;
-    /*height: 24px;
-    line-height: 24px;*/
-    padding: 0 6px;
+    margin: 6px;
+    height: 24px;
+    line-height: 24px;
   }
 
   .erase_btn button {
@@ -197,27 +192,49 @@ h1 {
 
 @media (max-width: 620px) {
   h1 {
-    font-size: 36px;
-    padding: 6px 0 0;
+    font-size: 30px;
+    padding: 18px 0 0;
   }
 
   .heading {
-    font-size: 21px;
-    padding: 12px 0 0;
+    font-size: 20px;
+    padding: 6px 0 0;
   }
 
   .container {
-    width: auto;
-  }
-
-  #silhouette_holder,
-  #parameters {
-    float: none;
+    width: 395px;
   }
 
   #silhouette_holder {
-    margin: 0 auto;
+    margin: 75px auto 0;
     width: 180px;
+  }
+
+  .selector_holder ul li button {
+    height: 18px;
+    line-height: 18px;
+  }
+
+  #parameters {
+    width: 192px;
   }
 }
 
+@media (max-width: 480px) {
+  .container {
+    width: 365px;
+  }
+
+  h1 {
+    font-size: 24px;
+    padding: 12px 0 0;
+  }
+
+  #parameters {
+    width: 165px;
+  }
+
+  .selector_holder ul li button {
+    width: 70px;
+  }
+}
