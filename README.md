@@ -1,6 +1,6 @@
 # Figure -- Build Your Silhouette
 * URL: https://fgure.herokuapp.com
-* Tools: Canvas API, ReactJS, Bézier curve
+* Tools: Canvas API, React.js, Bézier curve
 
 ## toDo
 * 'clean all' button
@@ -8,38 +8,33 @@
 * extract curve.js to separate app
 * add statistis of silouette/shape
 
-## SlyleGuide
+## Slyle Guide
 * https://material.io
 * buttons: https://material.io/guidelines/components/buttons.html#buttons-toggle-buttons
+* unit-text: 6
+* unit-block: 7
+* font-family: "Noto", sans-serif;
 
-unit 6, 7
+### H1
+* font-size: 35px
+* padding: 40px 0 0
 
-### Heading
-
-#### H1
-* font-size: 35px;
-* padding: 40px 0 0;
-
-#### H2
-* font-size: 28px;
-* padding: 20px 0 0;
-
-#### H3
-* font-size: 21px;
+### H2
+* font-size: 28px
+* padding: 20px 0 0
 
 ### Buttons
-* font-size: 14px;
-* font-family: "Noto", sans-serif;
-* color: #fff;
+* font-size: 14px
+* color: #fff
 
 #### Normal
 * background: #616161 = rgb(97, 97, 97)
-* hover background: rgba( , 0.7);
+* hover background: rgba( , 0.7)
 
 #### Active
-* background: #FF6F61 = rgb(255, 111, 97);
+* background: #FF6F61 = rgb(255, 111, 97)
 * hover background: rgba(, 0.7)
 
-#### 'clean all' button:
+#### 'clean all' button
 * background: #F44336
 
