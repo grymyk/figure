@@ -1,6 +1,6 @@
 # Figure -- Build Your Silhouette
-
-Project URL: (https://fgure.herokuapp.com/)
+* URL: https://fgure.herokuapp.com
+* Tools: Canvas API, Bézier curve
 
 ## toDo
 * 'clean all' button
