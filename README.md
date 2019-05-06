@@ -1,34 +1,45 @@
 # Figure -- Build Your Silhouette
 
-URL: https://fgure.herokuapp.com/
+Project URL: (https://fgure.herokuapp.com/)
 
 ## toDo
 * 'clean all' button
+* 'default' button
 * extract curve.js to separate app
 * add statistis of silouette/shape
 
-## Webdesign
+## SlyleGuide
 * https://material.io
 * buttons: https://material.io/guidelines/components/buttons.html#buttons-toggle-buttons
 
-slyle guide
+unit 6, 7
 
-unit 7
+### Heading
 
-font-size: 14px;
-font-family: "Noto", sans-serif;
-color: #212121;
+#### H1
+* font-size: 35px;
+* padding: 40px 0 0;
 
-params buttons colors:
+#### H2
+* font-size: 28px;
+* padding: 20px 0 0;
 
-normal:
-background: #FF6F61 == rgb(255, 111, 97)
-hover background: rgba(255, 111, 97, 0.7)
+#### H3
+* font-size: 21px;
 
-active:
-background: #616161 = rgb()
-hover background: rgba(, 0.7)
+### Buttons
+* font-size: 14px;
+* font-family: "Noto", sans-serif;
+* color: #fff;
 
-'clean all' button:
-bg: #F44336
+#### Normal
+* background: #616161 = rgb(97, 97, 97)
+* hover background: rgba( , 0.7);
+
+#### Active
+* background: #FF6F61 = rgb(255, 111, 97);
+* hover background: rgba(, 0.7)
+
+#### 'clean all' button:
+* background: #F44336
 

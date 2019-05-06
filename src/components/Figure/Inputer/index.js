@@ -7,7 +7,7 @@ const config = {
     face: {
         name: 'face',
         type: [
-            'rectangle',
+            'rect',
             'heart',
             'oval',
             'round'

@@ -51,7 +51,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 35px;
   padding: 40px 0 0;
 }
 
@@ -107,6 +107,7 @@ h1 {
   border: none;
   outline: none;
   font-size: 14px;
+  font-family: "Noto", sans-serif;
   width: 84px;
 }
 
@@ -206,13 +207,11 @@ h1 {
   }
 
   #silhouette_holder {
-    margin: 75px auto 0;
     width: 180px;
   }
 
   .selector_holder ul li button {
-    height: 18px;
-    line-height: 18px;
+    width: 49px;
   }
 
   #parameters {
@@ -235,6 +234,6 @@ h1 {
   }
 
   .selector_holder ul li button {
-    width: 70px;
+    width: 42px;
   }
 }
