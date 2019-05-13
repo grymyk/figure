@@ -13,7 +13,7 @@ class FaceShape {
         };
 
         this.shapeType = {
-            rectangle : {
+            rect: {
                 HEIGHT_FACTOR : 0.5,
                 DELTA_X_TOP : 0.5,
                 DELTA_Y_TOP : 0.05,

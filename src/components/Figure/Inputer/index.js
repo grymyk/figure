@@ -1,6 +1,7 @@
 import React from "react";
 
 import ShapeButton from "./ShapeButton";
+import ShapeButtonClean from "./ShapeButtonClean";
 
 const config = {
 

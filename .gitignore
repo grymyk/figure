@@ -1,4 +1,4 @@
 .idea
-/node_modules
+node_modules/
 /v1
 /v2
