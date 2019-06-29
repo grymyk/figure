@@ -12,12 +12,17 @@ class Tailor {
         let shape = new ShapeFactory(selector, type);
 
         shape.eraseShape(this.curve);
-        shape.drawShape(this.curve);
+
+        if (type) {
+            shape.drawShape(this.curve);
+        }
     }
 
     drawSilhouette(silhouette) {
         for (let part in silhouette) {
-            this.drawShape(part, silhouette[part]);
+            if (silhouette.hasOwnProperty(part)) {
+                this.drawShape(part, silhouette[part]);
+            }
         }
     }
 

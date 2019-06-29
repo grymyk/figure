@@ -19,7 +19,8 @@ class Figure extends React.Component {
         };
 
         this.onFigureChange = this.onFigureChange.bind(this);
-        //this.onFigureClean = this.onFigureClean.bind(this);
+        this.onFigureClean = this.onFigureClean.bind(this);
+        this.onFigureDefault = this.onFigureDefault.bind(this);
 	}
 
 	onFigureChange(selector, type) {
@@ -28,9 +29,29 @@ class Figure extends React.Component {
         });
     }
 
-    /*onFigureClean() {
-	    this.setState({});
-    }*/
+    onFigureClean() {
+	    console.log('onFigureClean');
+
+	    this.setState({
+            face : "",
+            shoulder : "",
+            breast : "",
+            waist : "",
+            thigh : "",
+            legs : "",
+        });
+    }
+
+    onFigureDefault() {
+        this.setState(this.state = {
+            face : "heart",
+            shoulder : "normal",
+            breast : "middle",
+            waist : "middle",
+            thigh : "middle",
+            legs : "normal",
+        });
+    }
 
 	render() {
 	    return (
@@ -43,8 +64,10 @@ class Figure extends React.Component {
                     <Inputer
                         siluet = {this.state}
                         onFigureChange = {this.onFigureChange}
-                        //onFigureClean = {this.onFigureClean}
-                    />
+                            onFigureClean = {this.onFigureClean}
+                            onFigureDefault = {this.onFigureDefault}
+
+                        />
                     <Viewer siluet = {this.state} />
                 </div>
 			</div>

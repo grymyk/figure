@@ -1,9 +1,5 @@
 import React from "react";
 
-const clearbtn = {
-    name: 'clean all shapes'
-};
-
 class ShapeButtonClean extends React.Component {
     constructor(props) {
         super(props);
@@ -19,12 +15,11 @@ class ShapeButtonClean extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className='erase_btn'>
                 <button
                     onClick = {(event) => this.handleCleanClick(event)}
-                    className={this.props.cls}
                 >
-                    {this.props.name}
+                    {'clear'}
                 </button>
             </div>
         )

@@ -22,7 +22,7 @@ class ShapeFactory {
         let isDrawn = this.isDrawnCheck(selector, type);
 
         if (isDrawn === false) {
-            let shape = new ShapeFactories[selector](type);
+            let shape = new ShapeFactories[selector]();
             shape.setOptions(type);
 
             this.setSilhouette(selector, type);

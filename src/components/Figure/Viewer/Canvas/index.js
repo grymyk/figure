@@ -38,9 +38,6 @@ class Canvas extends React.Component {
     }
 
     draw() {
-        /*const { angle } = this.props;
-        this.drawRect(angle);*/
-
         const tailor = new Tailor(this.ctx);
         tailor.drawSilhouette(this.props.siluet);
     }

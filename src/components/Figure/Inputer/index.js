@@ -2,6 +2,7 @@ import React from "react";
 
 import ShapeButton from "./ShapeButton";
 import ShapeButtonClean from "./ShapeButtonClean";
+import ShapeButtonDefault from "./ShapeButtonDefault";
 
 const config = {
 
@@ -81,14 +82,15 @@ class Inputer extends React.Component {
                 <div id="parameters">
                     {listShapeButton}
                 </div>
-                {/*<div className="erase_btn">
-                    <button id="erase_silhouette">clean all shapes</button>
-                </div>*/}
-                {/*<ShapeButtonClean
-                    name = {clearbtn.name}
-                    onInputerClean = {this.props.onFigureClean}
-                />*/}
+                <div>
+                    <ShapeButtonClean
+                        onInputerClean = {this.props.onFigureClean}
+                    />
 
+                    <ShapeButtonDefault
+                        onInputerDefault = {this.props.onFigureDefault}
+                    />
+                </div>
                 <div className="clear"></div>
             </div>
         )
