@@ -129,8 +129,8 @@ class ShoulderShape {
         let armSquareBottom = {};
         armSquareBottom.x = this.origin.x - this.size.width;
         armSquareBottom.y = this.origin.y + this.size.height * 2.3;
-        armSquareBottom.width = this.size.width * 0.4;
-        armSquareBottom.height = this.size.height * 1.7;
+        armSquareBottom.width = this.size.width * 0.5;
+        armSquareBottom.height = this.size.height * 1.8;
 
         curve.eraseSqure(armSquareBottom.x, armSquareBottom.y, armSquareBottom.width, armSquareBottom.height);
         curve.eraseSymmetricSqure(this.origin, armSquareBottom);

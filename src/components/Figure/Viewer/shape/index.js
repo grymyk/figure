@@ -14,7 +14,6 @@ ShapeFactories['waist'] = WaistShape;
 ShapeFactories['thigh'] = ThighShape;
 ShapeFactories['legs'] = LegsShape;
 
-
 class ShapeFactory {
     constructor(selector, type) {
         this.silhouette = {};

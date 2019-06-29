@@ -18,11 +18,13 @@ class BreastShape {
                 DELTA_X_CP_TOP : 1.2,
                 DELTA_Y_CP_TOP: 1
             },
+
             middle : {
                 BeastSpace: true,
                 DELTA_X_CP_TOP : 1.4,
                 DELTA_Y_CP_TOP: 1.4
             },
+
             large : {
                 BeastSpace: true,
                 DELTA_X_CP_TOP : 1.6,
@@ -78,7 +80,7 @@ class BreastShape {
 
     eraseShape(curve) {
         const DELTA_COOR = 0;
-        const DELTA_SIZE = 2;
+        const DELTA_SIZE = 4;
 
         let x = this.origin.x - this.size.width / 2 - DELTA_COOR;
         let y = this.origin.y - DELTA_COOR;
