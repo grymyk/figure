@@ -8,7 +8,7 @@ class ShapeButtonDefault extends React.Component {
     }
 
     handleDefaultClick() {
-        console.log('handleDefaultClick');
+        //console.log('handleDefaultClick');
 
         this.props.onInputerDefault();
     }

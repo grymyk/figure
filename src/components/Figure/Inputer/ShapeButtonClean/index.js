@@ -8,7 +8,7 @@ class ShapeButtonClean extends React.Component {
     }
 
     handleCleanClick() {
-        console.log('handleCleanClick');
+        //console.log('handleCleanClick');
 
         this.props.onInputerClean();
     }

@@ -30,7 +30,7 @@ class Figure extends React.Component {
     }
 
     onFigureClean() {
-	    console.log('onFigureClean');
+	    //console.log('onFigureClean');
 
 	    this.setState({
             face : "",
