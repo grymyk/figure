@@ -34,7 +34,7 @@ class ShoulderShape {
 
     drawShape(curve) {
         let LEFT_SHOULDER_BOTTOM_CP_X = this.options.LEFT_SHOULDER_BOTTOM_CP_X;
-        let DELTA_ORIGIN_X = this.options.DELTA_ORIGIN_X;
+        // let DELTA_ORIGIN_X = this.options.DELTA_ORIGIN_X;
         let DELTA_X_TOP = 0.1;
         let DELTA_X_BOTTOM = this.options.DELTA_X_BOTTOM;
         let DELTA_Y_TOP = 0.3;

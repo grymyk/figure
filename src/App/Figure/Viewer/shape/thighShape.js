@@ -32,7 +32,6 @@ class ThighShape {
     drawShape(curve) {
         var DELTA_X_TOP_CP = this.options.DELTA_X_TOP_CP;
         const DELTA_Y_TOP_CP = 0.5;
-        const DELTA_X_TOP_END = 0.4;
 
         var SHIFT_X_ORIGIN = this.size.width * 0.5;
 

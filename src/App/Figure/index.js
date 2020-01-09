@@ -43,7 +43,7 @@ class Figure extends React.Component {
     }
 
     onFigureDefault() {
-        this.setState(this.state = {
+        this.setState({
             face : "heart",
             shoulder : "normal",
             breast : "middle",
@@ -57,6 +57,7 @@ class Figure extends React.Component {
 	    return (
 			<div>
                 <div className="container">
+                    <div>LOGOTYPE</div>
                     <h1>Figure</h1>
 
                     <h2 className="heading">Build Your Figure</h2>

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import {ShapeFactory} from './shape';
 import {Curve} from './curve';
 

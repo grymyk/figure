@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.css';
 
-function Index() {
+import Figure from "./Figure";
+import CopyRight from "./CopyRight";
+
+function App() {
   return (
-    <div className="App">
-      sdcdc
-    </div>
+      <>
+          <Figure />
+          <CopyRight />
+      </>
   );
 }
 
-export default Index;
+export default App;
