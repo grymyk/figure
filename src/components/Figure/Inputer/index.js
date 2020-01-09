@@ -1,0 +1,101 @@
+import React from "react";
+
+import ShapeButton from "./ShapeButton";
+import ShapeButtonClean from "./ShapeButtonClean";
+import ShapeButtonDefault from "./ShapeButtonDefault";
+
+const config = {
+
+    face: {
+        name: 'face',
+        type: [
+            'rect',
+            'heart',
+            'oval',
+            'round'
+        ]
+    },
+
+    shoulder :{
+        name: 'shoulder',
+        type: [
+            'tight',
+            'normal',
+            'wide'
+        ]
+    },
+
+    breast: {
+        name: 'breast',
+        type: [
+            'small',
+            'middle',
+            'large'
+        ]
+    },
+
+    waist: {
+        name: 'waist',
+        type: [
+            'small',
+            'middle',
+            'large'
+        ]
+    },
+        thigh: {
+            name: 'thigh',
+            type: [
+                'small',
+                'middle',
+                'large'
+                ]
+        },
+
+    legs: {
+        name: 'legs',
+        type: [
+            'Otype',
+            'normal',
+            'Xtype'
+        ]
+    }
+};
+
+class Inputer extends React.Component {
+    render() {
+        const listShapeButton = [];
+
+        Object.keys(config).forEach( (key, index) => {
+            config[key]['active'] = this.props.siluet[key];
+
+            listShapeButton.push(
+                <ShapeButton
+                    key = {index}
+                    data = {config[key]}
+                    onInputerChange = {this.props.onFigureChange}
+                />
+            )
+        });
+
+        return (
+            <div id='parameters_holder'>
+                <div id="parameters">
+                    {listShapeButton}
+                </div>
+                <div>
+                    <ShapeButtonClean
+                        onInputerClean = {this.props.onFigureClean}
+                    />
+
+                    <ShapeButtonDefault
+                        onInputerDefault = {this.props.onFigureDefault}
+                    />
+                </div>
+                <div className="clear"></div>
+            </div>
+        )
+    }
+}
+
+export default Inputer;
+
