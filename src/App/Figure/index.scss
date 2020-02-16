@@ -54,9 +54,14 @@ h1 {
   padding: 40px 0 0;
 }
 
-.heading {
+h2 {
   font-size: 28px;
   padding: 20px 0 0;
+}
+
+.logo {
+  width: 100%;
+  background: url(logo_atelier.jpg) 0 43px no-repeat;
 }
 
 #parameters .heading {
@@ -239,12 +244,16 @@ h1 {
 }
 
 @media (max-width: 620px) {
+  .logo {
+    background-position: 0 15px;
+  }
+
   h1 {
     font-size: 30px;
     padding: 18px 0 0;
   }
 
-  .heading {
+  h2 {
     font-size: 20px;
     padding: 6px 0 0;
   }
@@ -278,6 +287,10 @@ h1 {
   h1 {
     font-size: 24px;
     padding: 12px 0 0;
+  }
+
+  h2 {
+    padding: 0;
   }
 
   #parameters {

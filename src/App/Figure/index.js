@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import './index.scss';
+import "./index.scss";
 
-import Viewer from './Viewer'
-import Inputer from './Inputer'
+import Viewer from "./Viewer"
+import Inputer from "./Inputer"
+import Heading from "./Heading";
 
 class Figure extends React.Component {
 	constructor(props) {
@@ -57,11 +58,7 @@ class Figure extends React.Component {
 	    return (
 			<div>
                 <div className="container">
-                    <div>LOGOTYPE</div>
-                    <h1>Figure</h1>
-
-                    <h2 className="heading">Build Your Figure</h2>
-
+                    <Heading />
                     <Inputer
                         siluet = {this.state}
                         onFigureChange = {this.onFigureChange}
