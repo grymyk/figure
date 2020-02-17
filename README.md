@@ -1,5 +1,5 @@
 # Figure -- Build Your Silhouette
-* URL: https://fgure.herokuapp.com
+* URL: http://figure.grymyk.com
 * Tools: Canvas API, React.js, Bézier curve
 
 ## toDo
