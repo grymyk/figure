@@ -1,3 +1,5 @@
+// useContext
+
 import React from 'react'
 
 class PureCanvas extends React.Component {
@@ -22,7 +24,11 @@ class PureCanvas extends React.Component {
         const size = '300';
         const idName = "moyaKanva";
 
-        const {id = idName, width = size, height = size} = this.props.attr;
+        const {
+            id = idName,
+            width = size,
+            height = size
+        } = this.props.attr;
 
         return (
             <canvas

@@ -5,7 +5,7 @@ import ShapeItem from './ShapeItem';
 function Shape(props) {
     const type = props.data.name;
 
-    const listFaceItem = props.data.type.map((shape, index) => {
+    const listFaceItem = props.data.type.map( (shape, index) => {
         return <ShapeItem
             key = {index}
             name = {shape}

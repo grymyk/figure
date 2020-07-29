@@ -1,3 +1,5 @@
+// useState
+
 import React from "react";
 
 import "./index.scss";
@@ -6,69 +8,55 @@ import Viewer from "./Viewer"
 import Inputer from "./Inputer"
 import Heading from "./Heading";
 
+const default_state = {
+    face : "heart",
+    shoulder : "normal",
+    breast : "middle",
+    waist : "middle",
+    thigh : "middle",
+    legs : "normal",
+};
+
+const clean_state = {
+    face : "",
+    shoulder : "",
+    breast : "",
+    waist : "",
+    thigh : "",
+    legs : "",
+}
+
 class Figure extends React.Component {
-	constructor(props) {
-		super(props);
+    state = default_state;
 
-		this.state = {
-            face : "heart",
-            shoulder : "normal",
-            breast : "middle",
-            waist : "middle",
-            thigh : "middle",
-            legs : "normal",
-        };
-
-        this.onFigureChange = this.onFigureChange.bind(this);
-        this.onFigureClean = this.onFigureClean.bind(this);
-        this.onFigureDefault = this.onFigureDefault.bind(this);
-	}
-
-	onFigureChange(selector, type) {
+	onFigureChange = (selector, type) => {
         this.setState({
             [selector]: type
         });
     }
 
-    onFigureClean() {
-	    //console.log('onFigureClean');
-
-	    this.setState({
-            face : "",
-            shoulder : "",
-            breast : "",
-            waist : "",
-            thigh : "",
-            legs : "",
-        });
+    onFigureClean = () => {
+	    this.setState(clean_state);
     }
 
-    onFigureDefault() {
-        this.setState({
-            face : "heart",
-            shoulder : "normal",
-            breast : "middle",
-            waist : "middle",
-            thigh : "middle",
-            legs : "normal",
-        });
+    onFigureDefault = () => {
+        this.setState(default_state);
     }
 
 	render() {
 	    return (
-			<div>
+			<>
                 <div className="container">
                     <Heading />
                     <Inputer
                         siluet = {this.state}
                         onFigureChange = {this.onFigureChange}
-                            onFigureClean = {this.onFigureClean}
-                            onFigureDefault = {this.onFigureDefault}
-
-                        />
+                        onFigureClean = {this.onFigureClean}
+                        onFigureDefault = {this.onFigureDefault}
+                    />
                     <Viewer siluet = {this.state} />
                 </div>
-			</div>
+			</>
 		)
 	}
 }

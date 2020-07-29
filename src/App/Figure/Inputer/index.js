@@ -4,97 +4,40 @@ import ShapeButton from "./ShapeButton";
 import ShapeButtonClean from "./ShapeButtonClean";
 import ShapeButtonDefault from "./ShapeButtonDefault";
 
-const config = {
+import config from './config'
 
-    face: {
-        name: 'face',
-        type: [
-            'rect',
-            'heart',
-            'oval',
-            'round'
-        ]
-    },
+function Inputer(props) {
+    const listShapeButton = [];
 
-    shoulder :{
-        name: 'shoulder',
-        type: [
-            'tight',
-            'normal',
-            'wide'
-        ]
-    },
+    Object.keys(config).forEach( (key, index) => {
+        config[key]['active'] = props.siluet[key];
 
-    breast: {
-        name: 'breast',
-        type: [
-            'small',
-            'middle',
-            'large'
-        ]
-    },
-
-    waist: {
-        name: 'waist',
-        type: [
-            'small',
-            'middle',
-            'large'
-        ]
-    },
-        thigh: {
-            name: 'thigh',
-            type: [
-                'small',
-                'middle',
-                'large'
-                ]
-        },
-
-    legs: {
-        name: 'legs',
-        type: [
-            'Otype',
-            'normal',
-            'Xtype'
-        ]
-    }
-};
-
-class Inputer extends React.Component {
-    render() {
-        const listShapeButton = [];
-
-        Object.keys(config).forEach( (key, index) => {
-            config[key]['active'] = this.props.siluet[key];
-
-            listShapeButton.push(
-                <ShapeButton
-                    key = {index}
-                    data = {config[key]}
-                    onInputerChange = {this.props.onFigureChange}
-                />
-            )
-        });
-
-        return (
-            <div id='parameters_holder'>
-                <div id="parameters">
-                    {listShapeButton}
-                </div>
-                <div>
-                    <ShapeButtonClean
-                        onInputerClean = {this.props.onFigureClean}
-                    />
-
-                    <ShapeButtonDefault
-                        onInputerDefault = {this.props.onFigureDefault}
-                    />
-                </div>
-                <div className="clear"></div>
-            </div>
+        listShapeButton.push(
+            <ShapeButton
+                key = {index}
+                data = {config[key]}
+                onInputerChange = {props.onFigureChange}
+            />
         )
-    }
+    });
+
+    return (
+        <div id='parameters_holder'>
+            <div id="parameters">
+                {listShapeButton}
+            </div>
+            <div>
+                <ShapeButtonClean
+                    onInputerClean = {props.onFigureClean}
+                />
+
+                <ShapeButtonDefault
+                    onInputerDefault = {props.onFigureDefault}
+                />
+            </div>
+            <div className="clear"></div>
+        </div>
+    )
 }
 
 export default Inputer;

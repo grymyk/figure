@@ -1,0 +1,55 @@
+{
+    "face" : {
+        "name" : "face",
+        "type" : [
+            "rect",
+            "heart",
+            "oval",
+            "round"
+        ]
+    },
+
+    "shoulder" :{
+        "name" : "shoulder",
+        "type": [
+            "tight",
+            "normal",
+            "wide"
+        ]
+    },
+
+    "breast": {
+        "name": "breast",
+        "type" : [
+            "small",
+            "middle",
+            "large"
+        ]
+    },
+
+    "waist": {
+        "name": "waist",
+        "type": [
+            "small",
+            "middle",
+            "large"
+        ]
+    },
+    "thigh": {
+        "name": "thigh",
+        "type": [
+            "small",
+            "middle",
+            "large"
+        ]
+    },
+
+    "legs" : {
+        "name" : "legs",
+        "type" : [
+            "Otype",
+            "normal",
+            "Xtype"
+        ]
+    }
+}
