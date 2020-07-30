@@ -1,4 +1,4 @@
-// useEffect
+// useEffect ?
 
 import React from 'react'
 
@@ -6,13 +6,6 @@ import PureCanvas from './PureCanvas'
 import {Tailor} from "../tailor";
 
 class Canvas extends React.Component {
-    saveContext = (ctx) => {
-        this.ctx = ctx;
-
-        this.width = this.ctx.canvas.width;
-        this.height = this.ctx.canvas.height;
-    }
-
     drawRect(angle) {
         this.ctx.save();
             this.ctx.beginPath();
@@ -43,6 +36,13 @@ class Canvas extends React.Component {
 
     componentDidUpdate() {
         this.draw()
+    }
+
+    saveContext = (ctx) => {
+        this.ctx = ctx;
+
+        this.width = this.ctx.canvas.width;
+        this.height = this.ctx.canvas.height;
     }
 
     render() {
