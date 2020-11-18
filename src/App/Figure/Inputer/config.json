@@ -47,9 +47,9 @@
     "legs" : {
         "name" : "legs",
         "type" : [
-            "Otype",
+            "O-type",
             "normal",
-            "Xtype"
+            "X-type"
         ]
     }
 }

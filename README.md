@@ -3,9 +3,7 @@
 * Tools: Canvas API, React.js, Bézier curve
 
 ## toDo
-* 'clean all' button
-* 'default' button
-* extract curve.js to separate app
+* extract curve.js to separate app -- chech!
 * add statistis of silouette/shape
 
 ## Slyle Guide
