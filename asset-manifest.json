@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.d725b5ac.css",
-    "main.js": "/react-gh-pages/static/js/main.93023f42.js",
-    "static/media/logo_atelier.jpg": "/react-gh-pages/static/media/logo_atelier.cbf78479ab77f281ea18.jpg",
-    "index.html": "/react-gh-pages/index.html",
-    "main.d725b5ac.css.map": "/react-gh-pages/static/css/main.d725b5ac.css.map",
-    "main.93023f42.js.map": "/react-gh-pages/static/js/main.93023f42.js.map"
+    "main.css": "/react-gh-pages/index.html/static/css/main.38b3736c.css",
+    "main.js": "/react-gh-pages/index.html/static/js/main.93023f42.js",
+    "static/media/logo_atelier.jpg": "/react-gh-pages/index.html/static/media/logo_atelier.cbf78479ab77f281ea18.jpg",
+    "index.html": "/react-gh-pages/index.html/index.html",
+    "main.38b3736c.css.map": "/react-gh-pages/index.html/static/css/main.38b3736c.css.map",
+    "main.93023f42.js.map": "/react-gh-pages/index.html/static/js/main.93023f42.js.map"
   },
   "entrypoints": [
-    "static/css/main.d725b5ac.css",
+    "static/css/main.38b3736c.css",
     "static/js/main.93023f42.js"
   ]
 }
