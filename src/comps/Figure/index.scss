@@ -1,0 +1,301 @@
+html, body {
+  height: 100%;
+  font-size: 18px;
+  font-family: "Noto", sans-serif;
+  color: #212121;
+  padding: 0;
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 830px;
+  margin: 0 auto;
+  border-top: none;
+  overflow: hidden;
+}
+
+#silhouette_holder {
+  margin: 10px 0 0;
+  width: 220px;
+  height: 450px;
+  float: left;
+}
+
+#parameters_holder {
+    float: left;
+}
+
+#parameters {
+  margin: 20px 20px 0 0;
+  width: 510px;
+}
+
+.clear {
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 35px;
+  padding: 40px 0 0;
+}
+
+h2 {
+  font-size: 28px;
+  padding: 20px 0 0;
+}
+
+.logo {
+  width: 100%;
+  background: url(logo_atelier.jpg) 6px 43px no-repeat;
+}
+
+#parameters .heading {
+  font-size: 21px;
+  padding: 0;
+  float: left;
+  height: 42px;
+  line-height: 42px;
+  width: 120px;
+  margin: 16px 0;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.clothers_sizes {
+  overflow: hidden;
+}
+
+.clothers_sizes ul li button {
+  display: block;
+  float: left;
+  background: #cfc;
+  padding: 0 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  height: 25px;
+  line-height: 25px;
+}
+.clothers_sizes ul li button:hover {
+  background: #ABCFAB;
+}
+
+.selector_holder {
+  overflow: hidden;
+}
+
+.selector_holder ul li button {
+  display: block;
+  float: left;
+  background: #006156;
+  color: #fff;
+  padding: 0;
+  margin: 16px 6px;
+  height: 45px;
+  line-height: 45px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: "Noto", sans-serif;
+  width: 84px;
+}
+
+.selector_holder ul li button:hover{
+  background: #00b3a1;
+  cursor: pointer;
+}
+
+.selector_holder ul li button.active {
+  background: #003832;
+}
+
+.selector_holder ul li button.active:hover {
+  background: #00665c;
+}
+
+.erase_btn {
+  margin: 16px 6px 6px 120px;
+  float: left;
+
+  button {
+    display: block;
+    background: #94000f;
+    color: #fff;
+    padding: 0;
+    margin: 32px 6px;
+    height: 45px;
+    line-height: 45px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: "Noto", sans-serif;
+    width: 84px;
+
+    &:hover {
+      background: #d10015;
+      cursor: pointer;
+    }
+  }
+}
+
+.default_btn {
+  margin: 16px 26px 6px 6px;
+  float: right;
+
+  button {
+    display: block;
+    background: #002420;
+    color: #fff;
+    padding: 0;
+    margin: 32px 6px;
+    height: 45px;
+    line-height: 45px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: "Noto", sans-serif;
+    width: 84px;
+
+    &:hover {
+      background: #00665c;
+      cursor: pointer;
+    }
+  }
+}
+
+.pagenator {
+  text-align: center;
+  padding: 20px 0 0;
+}
+
+@media (max-width: 902px) {
+  .container {
+    width: 580px;
+  }
+
+  #parameters {
+    width: 288px;
+
+    .selector_holder {
+      margin: 0 0 7px;
+    }
+
+    .heading {
+      float: none;
+      margin: 0;
+      text-align: center;
+      width: auto;
+      height: 24px;
+      line-height: 24px;
+      font-size: 18px;
+    }
+  }
+
+  .selector_holder ul li button {
+    margin: 6px;
+    height: 24px;
+    line-height: 24px;
+  }
+
+  .erase_btn {
+      margin: 16px 0 0;
+
+    button {
+      height: 24px;
+      line-height: 24px;
+      padding: 0 6px;
+      width: 56px;
+    }
+  }
+
+  .default_btn {
+    margin: 16px 21px 0 0;
+
+    button {
+      height: 24px;
+      line-height: 24px;
+      padding: 0 6px;
+      width: 56px;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .logo {
+    background-position: 6px 15px;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding: 18px 0 0;
+  }
+
+  h2 {
+    font-size: 20px;
+    padding: 6px 0 0;
+  }
+
+  .container {
+    width: 395px;
+  }
+
+  #silhouette_holder {
+    width: 180px;
+  }
+
+  .selector_holder ul li button {
+    width: 49px;
+  }
+
+  #parameters {
+    width: 192px;
+  }
+
+  .default_btn {
+    margin: 16px 30px 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 365px;
+  }
+
+  h1 {
+    font-size: 24px;
+    padding: 12px 0 0;
+  }
+
+  h2 {
+    padding: 0;
+  }
+
+  #parameters {
+    width: 165px;
+  }
+
+  .default_btn {
+    margin: 16px 21px 0 0;
+  }
+
+  .selector_holder ul li button {
+    width: 42px;
+  }
+}
