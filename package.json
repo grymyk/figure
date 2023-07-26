@@ -1,7 +1,7 @@
 {
   "name": "figure_v2",
   "version": "0.1.0",
-  "homepage": "https://grymyk.github.io/figure_v2",
+  "homepage": "https://grymyk.github.io/figure",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
