@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/figure_v2/static/css/main.54d8ad46.css",
-    "main.js": "/figure_v2/static/js/main.93023f42.js",
-    "static/media/logo_atelier.jpg": "/figure_v2/static/media/logo_atelier.cbf78479ab77f281ea18.jpg",
-    "index.html": "/figure_v2/index.html",
-    "main.54d8ad46.css.map": "/figure_v2/static/css/main.54d8ad46.css.map",
-    "main.93023f42.js.map": "/figure_v2/static/js/main.93023f42.js.map"
+    "main.css": "/figure/static/css/main.232ada3a.css",
+    "main.js": "/figure/static/js/main.93023f42.js",
+    "static/media/logo_atelier.jpg": "/figure/static/media/logo_atelier.cbf78479ab77f281ea18.jpg",
+    "index.html": "/figure/index.html",
+    "main.232ada3a.css.map": "/figure/static/css/main.232ada3a.css.map",
+    "main.93023f42.js.map": "/figure/static/js/main.93023f42.js.map"
   },
   "entrypoints": [
-    "static/css/main.54d8ad46.css",
+    "static/css/main.232ada3a.css",
     "static/js/main.93023f42.js"
   ]
 }
